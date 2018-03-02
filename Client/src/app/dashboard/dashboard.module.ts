@@ -7,10 +7,13 @@ import { DashboardComponent } from './dashboard.component';
 import { CompanyComponent } from './company/company.component';
 import { CartComponent } from '../cart/cart.component';
 import { FormsModule } from '@angular/forms';
+import { StoreComponent } from './store/store.component';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
+
 
 @NgModule({
-  imports: [ThemeModule, DashboardRoutingModule, FormsModule],
-  declarations: [DashboardComponent, CompanyComponent, CartComponent],
+  imports: [ThemeModule, DashboardRoutingModule, FormsModule,Ng2SmartTableModule],
+  declarations: [DashboardComponent, CompanyComponent, CartComponent, StoreComponent],
   entryComponents: [],
   providers: []
 })

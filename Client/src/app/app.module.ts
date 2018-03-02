@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule }   from '@angular/forms';
 import { UserService } from './user.service';
+import { StoreService } from './store.service';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +24,6 @@ import { UserService } from './user.service';
     AppRoutingModule,
   ],
   bootstrap: [AppComponent],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/' },UserService]
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' },UserService,StoreService]
 })
 export class AppModule {}

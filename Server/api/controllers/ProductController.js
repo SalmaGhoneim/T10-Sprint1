@@ -14,6 +14,7 @@ module.exports.getProduct = function(req, res, next) {
   Product.findById(req.params.productId).exec(function(err, product) {
     if (err) {
       return next(err);
+      
     }
     if (!product) {
       return res

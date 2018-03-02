@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import  {Observable } from 'rxjs/Observable';
+import {Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 
 const httpOptions = {
@@ -13,7 +13,7 @@ export class UserService {
   user = null;
 
   private signupUrl = 'http://localhost:3000/api/user/signup'; 
-  private loginUrl = 'http://localhost:3000/api/user/login';
+  private loginUrl =  'http://localhost:3000/api/user/login';
   
   constructor(private http : HttpClient ) { }
 
@@ -32,6 +32,4 @@ export class UserService {
   getUser() : any{
     return this.user;
   }
-
-
 }
